@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bares de Curitiba</title>
+  </head>
+  <body>
+  <button id="toggle-theme">🌙</button>
+    <header>
+      <h1>Bares de Curitiba</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Quintal do Monge</h2>
+        <p>
+          Bar rústico e aconchegante com diversas cervejas artesanais da região,
+          aperitivos e música ao vivo.
+        </p>
+        <img src="./Bares/quintal do monge.jpg" alt="Fachada do bar Quintal do Monge" />
+
+        <h3>Cardápio</h3>
+        <ul>
+          <li>Mandioca Supreme Cremosa</li>
+          <li>Marguerita</li>
+          <li>Salsicha do Alemão</li>
+        </ul>
+
+        <h3>Horário de Funcionamento</h3>
+        <table>
+          <tr>
+            <th>Dia</th>
+            <th>Abertura</th>
+            <th>Fechamento</th>
+          </tr>
+          <tr>
+            <td>Segunda a Quinta</td>
+            <td>17:00</td>
+            <td>01:00</td>
+          </tr>
+          <tr>
+            <td>Sexta e Sábado</td>
+            <td>17:00</td>
+            <td>01:00</td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>17:00</td>
+            <td>01:00</td>
+          </tr>
+        </table>
+        <p>Veja mais no nosso <a href="https://www.instagram.com/quintaldomonge/">Instagram</a>.</p>
+      </section>
+
+      <section>
+        <h2>Bar do Alemão</h2>
+        <p>
+          Bar e restaurante animado com loja de presentes, especializado em comida
+          alemã e em ambiente de taverna.
+        </p>
+        <img src="./Bares/bar do alemão.jpg" alt="Fachada do Bar do Alemão" />
+
+        <h3>Cardápio</h3>
+        <ul>
+          <li>Chopp Submarino</li>
+          <li>Carne de Onça</li>
+        </ul>
+
+        <h3>Horário de Funcionamento</h3>
+        <table>
+          <tr>
+            <th>Dia</th>
+            <th>Abertura</th>
+            <th>Fechamento</th>
+          </tr>
+          <tr>
+            <td>Domingo a Quinta</td>
+            <td>11:00</td>
+            <td>00:00</td>
+          </tr>
+          <tr>
+            <td>Sexta e Sábado</td>
+            <td>11:00</td>
+            <td>01:00</td>
+          </tr>
+        </table>
+        <p>Veja mais no nosso <a href="https://www.instagram.com/bardoalemaooficial/">Instagram</a>.</p>
+      </section>
+
+      <section>
+        <h2>Bar do Didi</h2>
+        <p>
+          O Bar do Didi é uma rede de bares bastante popular em Curitiba,
+          conhecida por seu ambiente descontraído, cerveja gelada e clima animado.
+        </p>
+        <img src="./Bares/didi.jpg" alt="Fachada do Bar do Didi" />
+
+        <h3>Cardápio</h3>
+        <ul>
+          <li>Litrão de Brahma</li>
+          <li>Caipirinha de limão</li>
+          <li>Batata Frita</li>
+          <li>Carne de Onça</li>
+        </ul>
+
+        <h3>Horário de Funcionamento</h3>
+        <table>
+          <tr>
+            <th>Dia</th>
+            <th>Abertura</th>
+            <th>Fechamento</th>
+          </tr>
+          <tr>
+            <td>Segunda a Quinta</td>
+            <td>16:00</td>
+            <td>00:00</td>
+          </tr>
+          <tr>
+            <td>Sexta e Sábado</td>
+            <td>17:00</td>
+            <td>01:00</td>
+          </tr>
+        </table>
+        <p>Veja mais no nosso <a href="https://www.instagram.com/bardodidigetulio/">Instagram</a>.</p>
+      </section>
+
+    </main>
+  
+<script>
+  const toggleButton = document.getElementById("toggle-theme");
+  toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    toggleButton.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+  });
+</script>
+
+</body>
+</html>
